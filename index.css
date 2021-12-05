@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -100px;
+    height: 100%;
+    width: 100%;
+}
+.google {
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 13px 9px #c4b59d, 0 -2px 1px #fff;
+}
+.letter1, .letter2, .letter3, .letter4, .letter5, .letter6 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline;
+}
+.letter1 {
+    left: 35vw;
+    color: #4285f4;
+    animation: let_ani 1.5s linear 1s infinite alternate;
+}
+.letter2 {
+    left: 40vw;
+    color: #ea4335;
+    animation: let_ani 1.5s linear 1.10s infinite alternate;
+}
+.letter3 {
+    left: 45vw;
+    color: #fbbc05;
+    animation: let_ani 1.5s linear 1.20s infinite alternate;
+}
+.letter4 {
+    left: 50vw;
+    color: #4285f4;
+    animation: let_ani 1.5s linear 1.30s infinite alternate;
+}
+.letter5 {
+    left: 55vw;
+    color: #34a853;
+    animation: let_ani 1.5s linear 1.40s infinite alternate;
+}
+.letter6 {
+    left: 58vw;
+    color: #ea4335;
+    animation: let_ani 1.5s linear 1.50s infinite alternate;
+}
+@keyframes let_ani {
+    to {
+        transform: translateY(50px);
+    }
+    0% {top: 50%;}
+    20% {top: 45%;}
+    35% {top: 50%;}
+    64% {top: 50%;}
+    65% {transform: scale(1,1);}
+    75% {transform: scale(2,2);}
+    85% {transform: scale(1,1);}
+    100% {top: 50%;}
+    /* 0% {
+        transform: translate3d(0, 0 0);
+        text-shadow: 0 0 6px black;
+    }
+    100% {
+        transform: translate3d(0, -1em, 0);
+        text-shadow: 0 0 2px black;
+    } */
+    /* 0% {top: 50%;}
+    20% {top: 45%;}
+    35% {top: 50%;}
+    64% {top: 50%;}
+    65% {top: 45%;}
+    75% {top: 50%;}
+    85% {top: 45%;}
+    100% {top: 50%;} */
+    /* 65% {transform: scale(1,1);}
+    75% {transform: scale(4,4);}
+    85% {transform: scale(1,1);}     */
+}
+/* @keyframes bounce {
+    0% {
+        transform: translate3d(0, 0, 0);
+        text-shadow: rgba(#000, 0.4) 0 0 0.5em;
+    }
+    100% {
+        transform: translate3d(0, -1em, 0);
+        text-shadow: rgba(#000, 0.4) 0 1em 0.5em;
+    }
+} */
